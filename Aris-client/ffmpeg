@@ -1,0 +1,18 @@
+for displaying four videos
+
+ffmpeg -i /home/iot/Desktop/ftp_videos/cam1/aa/aaf/1.mp4  -i /home/iot/Desktop/ftp_videos/cam2/aa/aaf/2.mp4 -i /home/iot/Desktop/ftp_videos/cam3/aa/aaf/3.mp4 -i /home/iot/Desktop/ftp_videos/cam4/aa/aaf/4.mp4 -filter_complex "[0:v][1:v]hstack[top]; [2:v][3:v]hstack[bottom]; [top][bottom]vstack,format=yuv420p[v]; [0:a][1:a][2:a][3:a]amerge=inputs=4[a]" -map "[v]" -map "[a]" -ac 2 /root/Desktop/acc/videos/output.mp4
+
+
+for concating two videos :
+
+ffmpeg -i /home/iot/Desktop/ftp_videos/cam1/aa/22.mp4 -i /home/iot/Desktop/ftp_videos/cam1/aa/11.mp4 -filter_complex concat=n=2:v=1:a=1 -f MOV -vn -y /home/iot/Desktop/ftp_videos/cam1/aa/aaf/hi.mp4
+
+ffmpeg -f concat -safe 0 -i tmp.txt -c copy out1.mp4
+
+/Desktop/acc/videos/concat1
+
+ffmpeg -i '/root/Desktop/acc/videos/concat1/cam1_concat_2019-09-23 15:18.mp4' -i '/root/Desktop/acc/videos/concat2/cam2_concat_2019-09-23 15:18.mp4' -i '/root/Desktop/acc/videos/concat3/cam3_concat_2019-09-23 15:18.mp4' -i '/root/Desktop/acc/videos/concat4/cam4_concat_2019-09-23 15:18.mp4' -filter_complex "[0:v][1:v]hstack[top]; [2:v][3:v]hstack[bottom]; [top][bottom]vstack,format=yuv420p[v]; [0:a][1:a][2:a][3:a]amerge=inputs=4[a]" -map "[v]" -map "[a]" -ac 2 /root/Desktop/acc/videos/output.mp4
+
+ffmpeg -i /root/Desktop/acc/tmp.txt -filter_complex "[0:v][1:v]hstack[top]; [2:v][3:v]hstack[bottom]; [top][bottom]vstack,format=yuv420p[v]; [0:a][1:a][2:a][3:a]amerge=inputs=4[a]" -map "[v]" -map "[a]" -ac 2 /root/Desktop/acc/videos/output.mp4
+
+ ffmpeg -i '/root/Desktop/acc/videos/concat1/cam1_concat_2019-09-23 15:18.mp4' -i '/root/Desktop/acc/videos/concat2/cam2_concat_2019-09-23 15:18.mp4' -i '/root/Desktop/acc/videos/concat3/cam3_concat_2019-09-23 15:18.mp4' -i '/root/Desktop/acc/videos/concat4/cam4_concat_2019-09-23 15:18.mp4' -f lavfi -t 0.1 -i anullsrc -filter_complex "[0:v][1:v]hstack[top]; [2:v][3:v]hstack[bottom]; [top][bottom]vstack,format=yuv420p[v]; [4:a][4:a][4:a][4:a]amerge=inputs=4[a]" -map "[v]" -map "[a]" -ac 2 /root/Desktop/acc/videos/output.mp4
