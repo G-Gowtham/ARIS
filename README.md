@@ -1,3 +1,2 @@
-ARIS
+ARIS - Accident Rescue and Investigation System
 
-Accident Rescue and Investigation System
