@@ -39,7 +39,7 @@ IPAddress subnet (255, 255, 248, 0);
 void setup() {
 
   Serial.begin(115200);
- pinMode(c, OUTPUT);
+ pinMode(c, INPUT);
   ESP.eraseConfig();
   WiFi.persistent(false);
   Serial.println("SET ESP IN STA MODE");
@@ -83,23 +83,15 @@ void readdata() {
   y = RAD_TO_DEG * (atan2(-xAng, -zAng) + PI);
   z = RAD_TO_DEG * (atan2(-yAng, -xAng) + PI);
 
-  Serial.print("Angle of inclination in Y axis= ");
-  Serial.print(y);
+  Serial.print("Angle of inclination in Z axis= ");
+  Serial.print(z);
   Serial.println((char)176);
   Serial.println("-------------------------------------------");
-  delay(500);
+  delay(1000);
  
   Serial.println(D);
-  if (y >= 40 && y <= 70 || y >= 100 && y <= 130 ||D==1 )
-  {
-    
-    digitalWrite(LED_BUILTIN, LOW);
-   
-   
-  }
   
-  
-  if (y >= 40 && y <= 70 || y >= 110 && y <= 130  )
+  if (z >= 20 && z <=110  || z >= 250 && z <= 275 ||D==0 )
   {
     digitalWrite(LED_BUILTIN, LOW);
     
@@ -137,9 +129,9 @@ void readdata() {
     
     
     }
-   if (D==1  )
+   if (D==0  )
   {
-    
+    digitalWrite(LED_BUILTIN, LOW);
     data = "ID=";
     data += String(id);
 

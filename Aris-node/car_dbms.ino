@@ -2,9 +2,8 @@
 #include <ESP8266WebServer.h>
 #include <SoftwareSerial.h>
 #include <ESP8266HTTPClient.h>
-#include <String.h>
-#define WLAN_SSID       "ARS"
-#define WLAN_PASS       "iot@@bit"
+#define WLAN_SSID       "sreexerox_Ext"
+#define WLAN_PASS       "987654321"
 const char* ssid = "CAR";
 const char* password = "12345abcd";
 int max_connection = 8;
@@ -74,30 +73,17 @@ void feed() {
   delay(1000);
  digitalWrite(LED_BUILTIN, HIGH);
 
- 
-String data7="iotlab";
-String data8 ="12";
-String data9 ="1";
-String data10 ="1,2,3,4";
 
   String n = data1;
   String n1 = data2;
   String n2 = data3;
   String n3 = data4;
-  String n4= data5;
-  String n5 = data6;
-  String n6 = data7;
-   String n7 = data8;
-   String n8 = data9;
-
-  String n9 = data10;
   
   
   
   HTTPClient http;
-  http.begin("http://10.10.110.5/acc/car.php");
+  http.begin("http://192.168.43.103/acc.php");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
-  int httpResponceCode = http.POST("n=" + n + "&n1=" + n1+"&n2=" + n2+"&n3=" + n3+"&n4=" + n4+"&n5=" + n5+"&n6=" + n6+"&n7=" + n7+"&n8=" + n8+"&n9=" + n9);
   Serial.print("Connecting to ");
   Serial.println(WLAN_SSID);
   WiFi.begin(WLAN_SSID, WLAN_PASS);
@@ -109,7 +95,8 @@ String data10 ="1,2,3,4";
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-  
+  int httpResponceCode = http.POST("loc=" + n + "&spot&=" + n1+"&vno=" + n+"&pno=" + n2);
+  Serial.print(httpResponceCode);
  
 }
 
