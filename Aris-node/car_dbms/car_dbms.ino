@@ -6,6 +6,7 @@
 #define WLAN_PASS       "987654321"
 const char* ssid = "CAR";
 const char* password = "12345abcd";
+const String postId = "demo1";
 int max_connection = 8;
 String URL;
 int httpCode;
@@ -15,12 +16,6 @@ HTTPClient http;
 IPAddress ip (10, 10, 66, 31);
 IPAddress gateway (10, 10, 64, 1);
 IPAddress subnet (255, 255, 248, 0);
-String ID;
-String state;
-String state1;
-String state2;
-String state3;
-String state4;
 void setup() {
   Serial.begin(9600);
   Serial.print("Connecting to ");
@@ -55,32 +50,22 @@ void handleroot() {
 }
 void feed() {
 
-  String data1 = server.arg("ID");
-  String data2 = server.arg("state");
-  String data3 = server.arg("state1");
-  String data4 = server.arg("state2");
-  String data5 = server.arg("state3");
-  String data6 = server.arg("state4");
-
+  String vehicleNo = server.arg("vehicleNo");
+  String nameOfOwner = server.arg("name");
+  String location = server.arg("location");
+  String phoneNumber = server.arg("phoneNumber");
+  String typeOfAccident = server.arg("type");
   server.send( 1, "text/plain", "Response");
-  Serial.println(data1);
-  Serial.println(data2);
-  Serial.println(data3);
-  Serial.println(data4);
-  Serial.println(data5);
-  Serial.println(data6);
+  Serial.println("------------------");
+  Serial.println("Vehicle Number:"+vehicleNo);
+  Serial.println("Owner Name    :"+nameOfOwner);
+  Serial.println("Location      :"+location);
+  Serial.println("Phone Number  :"+phoneNumber);
+  Serial.println("Accident Type :"+typeOfAccident);
  digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
  digitalWrite(LED_BUILTIN, HIGH);
 
-
-  String n = data1;
-  String n1 = data2;
-  String n2 = data3;
-  String n3 = data4;
-  
-  
-  
   HTTPClient http;
   http.begin("http://192.168.43.103/acc.php");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -95,7 +80,7 @@ void feed() {
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-  int httpResponceCode = http.POST("loc=" + n + "&spot&=" + n1+"&vno=" + n+"&pno=" + n2);
+  int httpResponceCode = http.POST("loc=" + location + "&spot&=" + postId+"&vno=" + vehicleNo+"&pno=" + phoneNumber);
   Serial.print(httpResponceCode);
  
 }
