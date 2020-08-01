@@ -2,18 +2,15 @@
 #include <ESP8266WebServer.h>
 #include <SoftwareSerial.h>
 #include <ESP8266HTTPClient.h>
-#define WLAN_SSID       "sreexerox_Ext"
-#define WLAN_PASS       "8883917310"
 const char* ssid = "CAR";
 const char* password = "12345abcd";
-const String postId = "demo1";
 int max_connection = 8;
 String URL;
 int httpCode;
 String payload;
 ESP8266WebServer server(80);
 HTTPClient http;
-IPAddress ip (10, 10, 66, 31);
+IPAddress ip (10, 10, 66, 32;
 IPAddress gateway (10, 10, 64, 1);
 IPAddress subnet (255, 255, 248, 0);
 void setup() {
@@ -50,24 +47,14 @@ void handleroot() {
 }
 void feed() {
 
-  String vehicleNo = server.arg("vehicleNo");
-  String nameOfOwner = server.arg("name");
-  String location = server.arg("location");
-  String phoneNumber = server.arg("phoneNumber");
-  String typeOfAccident = server.arg("type");
+  String indiactorSignal = server.arg("indicatorSignal");
   server.send( 1, "text/plain", "Response");
-  Serial.println("------------------");
-  Serial.println("Vehicle Number:"+vehicleNo);
-  Serial.println("Owner Name    :"+nameOfOwner);
-  Serial.println("Location      :"+location);
-  Serial.println("Phone Number  :"+phoneNumber);
-  Serial.println("Accident Type :"+typeOfAccident);
  digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
  digitalWrite(LED_BUILTIN, HIGH);
 
   HTTPClient http;
-  http.begin("http://192.168.1.104/acc.php");
+  http.begin("http://192.168.43.103/acc.php");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
   Serial.print("Connecting to ");
   Serial.println(WLAN_SSID);
@@ -75,12 +62,12 @@ void feed() {
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
-  }
+  }.
   Serial.println();
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-  int httpResponceCode = http.POST("loc=" + location + "&spot=" + postId+"&vno=" + vehicleNo+"&pno=" + phoneNumber +"&typeOfAccident=" +typeOfAccident);
+  int httpResponceCode = http.POST("indicator="+indicatorSignal);
   Serial.print(httpResponceCode);
  
 }
