@@ -12,7 +12,7 @@
 
 * Aris-server          --- server code
 
-* Aris-web             --- 
+* Aris-web             --- aris web application(python -  flask backended)
                                                         
 
                                                                       OVERVIEW OF OUR PROJECT
