@@ -1,6 +1,6 @@
-                                                            ARIS - Accident Rescue and Investigation System
+                                                            #ARIS - Accident Rescue and Investigation System
 
-                                                                      OVERVIEW OF OUR PROJECT
+                                                                      #OVERVIEW OF OUR PROJECT
                                   
 	Precaution 
 	Identifying the Accident 
