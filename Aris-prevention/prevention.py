@@ -33,6 +33,6 @@ while (1):
 				
 			except:
 		        	print("[+] UNABLE TO FETCH DATA")
-			else:
+            else:
                 pre_count=pre_count+1;
                 
