@@ -22,12 +22,14 @@
 *	Identifying the Accident 
 *	Rescue of the Accident 
 
-##                                                                            Precaution
+##                                                                            Prevention before the Accident
 
 *	To Prevent The Accidents And To Identify The Accident Prone Zones , School Zones , Indicating Alcohol Consumption , 
 Hairpin Bends.
 
 *	It Will Display In LCD Monitor Of The Car.
+
+*   We are identifying the accident prone zones using the previous accidents data so that our module could be placed there to avoid furthur accidents.
 
 ##                                                                       Identifying the Accident
 
