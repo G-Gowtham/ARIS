@@ -7,13 +7,13 @@
 
 * Aris-executable      --- portable Windows executable application (click aris.bat to run)
 
-* Aris-node            --- node module's code
+* Aris-node            --- aris node module's code
 
-* Aris-prevention      --- prevention module's code
+* Aris-prevention      --- aris prevention module's code 
 
-* Aris-server          --- server code
+* Aris-server          --- aris server code
 
-* Aris-web             --- aris web application(python -  flask backended)
+* Aris-web             --- aris web application (python - flask backended)
                                                         
 
 #                                                                      OVERVIEW OF OUR PROJECT
@@ -63,7 +63,7 @@ THERE ARE TWO CASES
 
 
 
-#                                                                          SIGNIFICANT FEATURES :
+#                                                                          SIGNIFICANT FEATURES
 
 *	The module in the receiver can be wired or wireless with GPS location .
 
