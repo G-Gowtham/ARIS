@@ -3,9 +3,9 @@
 
  #                                                           Repositories info
 
-* Aris-executable      --- portable Windows executable application (click aris.bat to run)
-
 * Aris-model           --- 3d model of the Hardware case for our Module
+
+* Aris-executable      --- portable Windows executable application (click aris.bat to run)
 
 * Aris-node            --- aris node module's code
 
