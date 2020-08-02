@@ -5,7 +5,7 @@
 
 * Aris-executable      --- portable Windows executable application (click aris.bat to run)
 
-* ARIS-model           --- 3d model of the Hardware case for our Module
+* Aris-model           --- 3d model of the Hardware case for our Module
 
 * Aris-node            --- aris node module's code
 
