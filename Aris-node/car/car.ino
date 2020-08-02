@@ -84,7 +84,7 @@ void readdata()
 
   Serial.println(D);
 
-  if (z >= 20 && z <= 110 || z >= 250 && z <= 275 || D == 0)
+  if (z >= 20 && z <= 110 || z >= 250 && z <= 275 )
   {
     digitalWrite(LED_BUILTIN, LOW);
 

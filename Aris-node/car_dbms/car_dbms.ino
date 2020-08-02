@@ -3,7 +3,7 @@
 #include <SoftwareSerial.h>
 #include <ESP8266HTTPClient.h>
 #define WLAN_SSID       "sreexerox_Ext"
-#define WLAN_PASS       "8883917310"
+#define WLAN_PASS       "987654321"
 const char* ssid = "CAR";
 const char* password = "12345abcd";
 const String postId = "demo1";
@@ -67,7 +67,7 @@ void feed() {
  digitalWrite(LED_BUILTIN, HIGH);
 
   HTTPClient http;
-  http.begin("http://192.168.1.104/acc.php");
+  http.begin("http://192.168.43.103/acc.php");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
   Serial.print("Connecting to ");
   Serial.println(WLAN_SSID);
