@@ -48,8 +48,12 @@ THERE ARE TWO CASES
 SIGNIFICANT FEATURES :
 
 	The module in the receiver can be wired or wireless with GPS location .
+
 	The video of the accident is captured and  it is cropped to a 3 min video for future investigation(placing of camera is optional)
+
 	In urban areas we shall use wired communication to transfer data from receiver to cloud due to its low latency . So data can be transfer in high rate of speed .
+
 	In rural areas we shall use wireless communication 
+
 	In case of multiple accident , we can get data from at least of 10 vehicle at a time from same car . 
 This Will Lead To Decrease In Death Rate Both In Day And Night Time As Well.  Well , We Have Designed This To Prevent , Point Out And  Protect .
