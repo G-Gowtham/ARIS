@@ -1,6 +1,7 @@
-                                                            ARIS - Accident Rescue and Investigation System
+#                                                            ARIS - Accident Rescue and Investigation System
 
-                                                            Repositories info
+
+ #                                                           Repositories info
 
 * ARIS-model           --- over 3d Hardware case for our Module
 
@@ -15,20 +16,20 @@
 * Aris-web             --- aris web application(python -  flask backended)
                                                         
 
-                                                                      OVERVIEW OF OUR PROJECT
+#                                                                      OVERVIEW OF OUR PROJECT
                                   
 *	Prevention before the Accident
 *	Identifying the Accident 
 *	Rescue Of the Accident 
 
-                                                                            Precaution
+#                                                                            Precaution
 
 *	To Prevent The Accidents And To Identify The Accident Prone Zones , School Zones , Indicating Alcohol Consumption , 
 Hairpin Bends.
 
 *	It Will Display In LCD Monitor Of The Car.
 
-                                                                       Identifying the Accident
+#                                                                       Identifying the Accident
 
 *	Crashing Of Cars
 
@@ -40,7 +41,7 @@ Hairpin Bends.
 
 *	For Flipping Of Car We Have Inserted Gyroscope Sensor To Find The Angle Of Deviation In Which It Exceed 45 To 60 Degree, In Such Case The Car Will Be Flipped All These Information Will Send To Server Side.
 
-                                                                       Rescue Of The Accident
+#                                                                       Rescue Of The Accident
                                                                        
 THERE ARE TWO CASES 
 
@@ -62,9 +63,9 @@ THERE ARE TWO CASES
 
 
 
-SIGNIFICANT FEATURES :
+#                                                                          SIGNIFICANT FEATURES :
 
-	The module in the receiver can be wired or wireless with GPS location .
+*	The module in the receiver can be wired or wireless with GPS location .
 
 *	The video of the accident is captured and  it is cropped to a 3 min video for future investigation(placing of camera is optional)
 
