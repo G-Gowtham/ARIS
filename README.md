@@ -1,4 +1,4 @@
-                                                            **ARIS - Accident Rescue and Investigation System**
+                                                            ARIS - Accident Rescue and Investigation System
 
                                                             Repositories info
 
