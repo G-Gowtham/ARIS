@@ -22,14 +22,14 @@
 *	Identifying the Accident 
 *	Rescue of the Accident 
 
-#                                                                            Precaution
+##                                                                            Precaution
 
 *	To Prevent The Accidents And To Identify The Accident Prone Zones , School Zones , Indicating Alcohol Consumption , 
 Hairpin Bends.
 
 *	It Will Display In LCD Monitor Of The Car.
 
-#                                                                       Identifying the Accident
+##                                                                       Identifying the Accident
 
 *	Crashing Of Cars
 
@@ -41,7 +41,7 @@ Hairpin Bends.
 
 *	For Flipping Of Car We Have Inserted Gyroscope Sensor To Find The Angle Of Deviation In Which It Exceed 45 To 60 Degree, In Such Case The Car Will Be Flipped All These Information Will Send To Server Side.
 
-#                                                                       Rescue Of The Accident
+##                                                                       Rescue Of The Accident
                                                                        
 THERE ARE TWO CASES 
 
