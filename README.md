@@ -3,7 +3,7 @@
 
  #                                                           Repositories info
 
-* ARIS-model           --- over 3d Hardware case for our Module
+* ARIS-model           --- 3d model of the Hardware case for our Module
 
 * Aris-executable      --- portable Windows executable application (click aris.bat to run)
 
@@ -20,7 +20,7 @@
                                   
 *	Prevention before the Accident
 *	Identifying the Accident 
-*	Rescue Of the Accident 
+*	Rescue of the Accident 
 
 #                                                                            Precaution
 
