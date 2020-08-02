@@ -1,8 +1,23 @@
-                                                            ARIS - Accident Rescue and Investigation System
+                                                            **ARIS - Accident Rescue and Investigation System**
+
+                                                            Repositories info
+
+* ARIS-model           --- Over 3d Hardware case for our Module
+
+* Aris-executable      --- portable Windows executable application (click aris.bat to run)
+
+* Aris-node            --- 
+
+* Aris-prevention      ---
+
+* Aris-server          ---
+
+* Aris-web             ---
+                                                        
 
                                                                       OVERVIEW OF OUR PROJECT
                                   
-	Precaution 
+	Prevention before the Accident
 	Identifying the Accident 
 	Rescue Of the Accident 
 
@@ -16,7 +31,9 @@ Hairpin Bends.
                                                                        Identifying the Accident
 
 	Crashing Of Cars
+
 	Flipping Of Cars
+
 	Fire Accident
 
 	If The Accident Occurs Either By Crashing Of Car Or Fire Accident . In Which We Have Already Used The Existing System (Air Bag Concept And Fire Detector)And Enhanced It, Which Is Connected To The Module To Fetch The Data . 
