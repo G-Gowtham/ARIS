@@ -2,15 +2,16 @@
 
                                                                       OVERVIEW OF OUR PROJECT
                                   
-#	Precaution 
-#	Identifying the Accident 
-#	Rescue Of the Accident 
+	Precaution 
+	Identifying the Accident 
+	Rescue Of the Accident 
 
                                                                             Precaution
 
-#	To Prevent The Accidents And To Identify The Accident Prone Zones , School Zones , Indicating Alcohol Consumption , Hairpin Bends.
+	To Prevent The Accidents And To Identify The Accident Prone Zones , School Zones , Indicating Alcohol Consumption , 
+Hairpin Bends.
 
-#	It Will Display In LCD Monitor Of The Car.
+	It Will Display In LCD Monitor Of The Car.
 
                                                                        Identifying the Accident
 
