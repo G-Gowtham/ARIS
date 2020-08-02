@@ -26,7 +26,7 @@
 
 *	To Prevent The Accidents we are placing our transmiiter module on  Accident Prone Zones , School Zones, Hairpin Bends,etc...
 
-*	It Will transmit the information in to the car and which will be displayed in LCD Monitor Of The Car.
+*	It Will transmit the information to the car and which will be displayed in LCD Monitor Of The Car.
 
 *   We are identifying the accident prone zones using the previous accidents data so that our module could be placed there to avoid furthur accidents.
 
