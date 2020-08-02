@@ -1,6 +1,5 @@
 import MySQLdb
-pre_count=0;
-
+    
 while (1):
 	try:
 	    db = MySQLdb.connect("127.0.0.1","iot","iot","iot")
@@ -32,6 +31,8 @@ while (1):
 				cursor.execute(cmd1)
 				values = cursor.fetchall()
 				
-
 			except:
-		        	print("HAVE A SAFE RIDE")
+		        	print("[+] UNABLE TO FETCH DATA")
+			else:
+                pre_count=pre_count+1;
+                
